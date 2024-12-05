@@ -1,45 +1,17 @@
 /* Put any custom CSS styles here.  */
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
 body {
-  margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #f9fafb;
   
-}
-
-.card {
-  max-height: 504px;
-  max-width: 340px;
-  border: 1px solid gray;
-  border-radius: 10px;
-
-}
-
-.card_image img {
-  height: 288px;
-  width: 100%;
-}
-
-.card_content {
-  padding: 24px 16px;
-}
-
-.card_content-title p {
-  
-  background-color: #ccffcc;
-  color: #0f4d0f;
-  text-align: center;
-  border: 1px solid #59ff59;
-  border-radius: 20px;
 }
 
 
@@ -59,4 +31,44 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+
+.card {
+  max-width: 340px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 120px auto;
+}
+
+.card_image img {
+  height: 288px;
+  width: 100%;
+}
+
+.card_content {
+  padding: 24px 16px;
+}
+
+.card_content-title span {
+  padding-inline: 8px;
+  background-color: #f0fdf4;
+  color: #15803D;
+  text-align: center;
+  border: 1px solid #BBF7D0;
+  border-radius: 20px;
+}
+
+.card_content-title h2 {
+  font-weight: bold;
+  margin-block: 12px;
+}
+
+.card_content-info p {
+  margin-bottom: 24px;
+}
+
+.card_content-info a {
+  color: #4338CA;
+  font-weight: 600;
 }
