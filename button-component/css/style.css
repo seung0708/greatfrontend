@@ -2,42 +2,68 @@
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
 body {
   margin: 0;
+  padding: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
   box-sizing: border-box;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;  
 }
 
-.primary button {
+.primary button, .secondary button, .destructive button {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
 
 }
 
-.primary .bg-color, .primary .no-bg-color {
-  display: flex; 
+.primary .bg-color, .secondary, .primary .no-bg-color, .destructive {
+  display: flex;
+  align-items: baseline;
   gap: 10px;
   margin-bottom: 20px;
+
+}
+
+.bg-color button {
+  background-color: #4338CA;
+  color: #FFF;
+}
+
+.destructive button {
+  background-color: #DC2626;
+  color: white;
 }
 
 .xs {
-  padding: 10px;
+  padding: 10px 14px;
+  font-size: .875rem;
+  line-height: 1.25rem;
+
 }
 
 .s {
-  padding: 12px;
+  padding: 10px 16px;
+  
 }
 
 .m {
-  padding: 16px;
+  padding: 12px 20px;
 }
 
 .l, .icon {
-  padding: 18px;
+  padding: 18px 24px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .credits {
