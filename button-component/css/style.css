@@ -23,10 +23,9 @@ body {
 .primary button, .secondary button, .destructive button {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
-
 }
 
-.primary .bg-color, .secondary, .primary .no-bg-color, .destructive {
+.primary .bg-color, .link .color, .link .gray, .secondary, .primary .no-bg-color, .destructive {
   display: flex;
   align-items: baseline;
   gap: 10px;
@@ -51,6 +50,14 @@ body {
 
 }
 
+.link .color {
+  color: #4338CA;
+}
+
+.link .gray {
+  color: gray;
+}
+
 .s {
   padding: 10px 16px;
   
@@ -64,6 +71,10 @@ body {
   padding: 18px 24px;
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.color .l, .color .icon, .gray .l, .gray .icon {
+  padding: 0;
 }
 
 .credits {
