@@ -13,6 +13,30 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 32px;
+
+}
+
+.navbar__left {
+  width: 30%;
+  padding: 0;
+}
+
+.navbar__left__list {
+  gap: 20px;
+}
+
+
+
+.navbar__toggle{
+  display: none;
 }
 
 .credits {
